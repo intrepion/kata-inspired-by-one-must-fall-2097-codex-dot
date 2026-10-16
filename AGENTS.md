@@ -1,0 +1,2 @@
+# Engineering guidance
+Preserve sibling projects, their previews, and all existing browser storage. Work only in this repository. Run strict TypeScript, behavioral tests and production build. Combat simulation owns rules; renderer must not mutate combat state. Use fixed ticks and deterministic AI. No copied game code, names, art, audio, or packaged game assets. Document tuning separately from verified inspiration. Review standards and fidelity independently before publication. Native QA must use normal browser inputs; never represent simulation tests as native play.
