@@ -1,1 +1,125 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rivet Circuit — Exhibition 01</title></head><body><div id="app"><header><a class="brand" href="./"><span class="mark">R/</span> RIVET CIRCUIT</a><div class="header-right"><span class="live">● LOCAL EXHIBITION</span><button id="sound">SOUND ON</button></div></header><main><div class="intro"><div><p class="eyebrow">HEAVY MACHINES. HUMAN INSTINCT.</p><h1>Steel settles everything.</h1><p class="subtitle">Two machines. One floor. Take your place in the circuit.</p></div><div class="edition"><b>01 / THE FOUNDRY</b><span>EXHIBITION SERIES · FIRST TO TWO</span></div></div><section class="cabinet" aria-label="Fighting arena"><div class="arena-top"><span>LIVE FEED <i></i></span><span id="record">PILOT RECORD 00–00</span><span>SECTOR 07 / NIGHT SHIFT</span></div><div class="screen"><canvas id="game" width="1000" height="490" tabindex="0" aria-label="Robot fighting game. Arrow keys move, J punch, K kick. Click Engage to start."></canvas><div id="overlay"><p class="eyebrow">PILOT LINK ESTABLISHED</p><h2 id="overlay-title">Enter the circuit.</h2><p id="overlay-copy">KESTREL / YOU <span>VS</span> BASALT / CPU<br>Win two rounds. Hold away to guard. Make every hit count.</p><button id="engage">ENGAGE SYSTEMS <span>↗</span></button></div></div><div class="arena-bottom"><span id="status" aria-live="polite">AWAITING PILOT</span><span id="motion">INPUT LINK — READY</span><button id="pause">PAUSE [ESC]</button></div></section><section class="guide"><div class="guide-title"><span class="eyebrow">PILOT QUICKSTART</span><h3>Know your machine.</h3><p>Keyboard required. Click the arena to focus.</p></div><div class="instruction"><span class="number">01</span><h4>POSITION</h4><p><kbd>←</kbd> <kbd>→</kbd> Move · <kbd>↑</kbd> Jump<br><kbd>↓</kbd> Crouch · WASD also works</p></div><div class="instruction"><span class="number">02</span><h4>STRIKE & GUARD</h4><p><kbd>J</kbd> Punch · <kbd>K</kbd> Kick<br>Hold back to block · ↓ + back: low guard<br>Close forward + J: throw</p></div><div class="instruction"><span class="number">03</span><h4>ARC DRIVE</h4><p><strong>↓ ↘ → + J</strong> when facing right<br>Mirror when facing left. Roll the directions.<br>Integrity loses rounds; stability recovers.</p></div></section><details><summary>FIELD NOTES / RULES & RESEARCH <span>+</span></summary><p>Standing guard stops standing and aerial strikes. Low guard stops standing and low strikes. Throws break guard; jumping avoids throws and sweeps. Stability drains on impact and returns during neutral movement; depletion causes a mash-recoverable stun. Red integrity never regenerates. Sixty-second rounds, first to two. No chip damage.</p><p>This original exhibition is inspired by One Must Fall: 2097’s two-button, directional fighting. It omits tournaments, upgrades, stage hazards, finishing moves and rehit juggling. <a href="https://github.com/intrepion/kata-inspired-by-one-must-fall-2097-codex-dot/blob/main/docs/RESEARCH.md" target="_blank" rel="noreferrer">Read the fidelity notes ↗</a></p></details><footer><span>R/C — INDEPENDENT ROBOT COMBAT</span><span>ORIGINAL CODE · ART · SYNTHESIZED AUDIO</span></footer></main></div><script type="module" src="/src/main.ts"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rivet Circuit — Exhibition 01</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <a class="brand" href="./"
+          ><span class="mark">R/</span> RIVET CIRCUIT</a
+        >
+        <div class="header-right">
+          <span class="live">● LOCAL EXHIBITION</span
+          ><button id="sound">SOUND ON</button>
+        </div>
+      </header>
+      <main>
+        <div class="intro">
+          <div>
+            <p class="eyebrow">HEAVY MACHINES. HUMAN INSTINCT.</p>
+            <h1>Steel settles everything.</h1>
+            <p class="subtitle">
+              Two machines. One floor. Take your place in the circuit.
+            </p>
+          </div>
+          <div class="edition">
+            <b>01 / THE FOUNDRY</b><span>EXHIBITION SERIES · FIRST TO TWO</span>
+          </div>
+        </div>
+        <section class="cabinet" aria-label="Fighting arena">
+          <div class="arena-top">
+            <span>LIVE FEED <i></i></span
+            ><span id="record">PILOT RECORD 00–00</span
+            ><span>SECTOR 07 / NIGHT SHIFT</span>
+          </div>
+          <div class="screen">
+            <canvas
+              id="game"
+              width="1000"
+              height="490"
+              tabindex="0"
+              aria-label="Robot fighting game. Arrow keys move, J punch, K kick. Click Engage to start."
+            ></canvas>
+            <div id="overlay">
+              <p class="eyebrow">PILOT LINK ESTABLISHED</p>
+              <h2 id="overlay-title">Enter the circuit.</h2>
+              <p id="overlay-copy">
+                KESTREL / YOU <span>VS</span> BASALT / CPU<br />Win two rounds.
+                Hold away to guard. Make every hit count.
+              </p>
+              <button id="engage">ENGAGE SYSTEMS <span>↗</span></button>
+            </div>
+          </div>
+          <div class="arena-bottom">
+            <span id="status" aria-live="polite">AWAITING PILOT</span
+            ><span id="motion">INPUT LINK — READY</span
+            ><button id="pause">PAUSE [ESC]</button>
+          </div>
+        </section>
+        <section class="guide">
+          <div class="guide-title">
+            <span class="eyebrow">PILOT QUICKSTART</span>
+            <h3>Know your machine.</h3>
+            <p>Keyboard required. Click the arena to focus.</p>
+          </div>
+          <div class="instruction">
+            <span class="number">01</span>
+            <h4>POSITION</h4>
+            <p>
+              <kbd>←</kbd> <kbd>→</kbd> Move · <kbd>↑</kbd> Jump<br /><kbd
+                >↓</kbd
+              >
+              Crouch · WASD also works
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number">02</span>
+            <h4>STRIKE & GUARD</h4>
+            <p>
+              <kbd>J</kbd> Punch · <kbd>K</kbd> Kick<br />Hold back to block · ↓
+              + back: low guard<br />Close forward + J: throw
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number">03</span>
+            <h4>ARC DRIVE</h4>
+            <p>
+              <strong>↓ ↘ → + J</strong> when facing right<br />Mirror when
+              facing left. Roll the directions.<br />Integrity loses rounds;
+              stability recovers.
+            </p>
+          </div>
+        </section>
+        <details>
+          <summary>FIELD NOTES / RULES & RESEARCH <span>+</span></summary>
+          <p>
+            Standing guard stops standing and aerial strikes. Low guard stops
+            standing and low strikes. Throws break guard; jumping avoids throws
+            and sweeps. Stability drains on impact and returns during neutral
+            movement; depletion causes a mash-recoverable stun. Integrity never
+            regenerates. Sixty-second rounds, first to two. No chip damage.
+          </p>
+          <p>
+            This original exhibition is inspired by One Must Fall: 2097’s
+            two-button, directional fighting. It omits tournaments, upgrades,
+            stage hazards, finishing moves and rehit juggling.
+            <a
+              href="https://github.com/intrepion/kata-inspired-by-one-must-fall-2097-codex-dot/blob/main/docs/RESEARCH.md"
+              target="_blank"
+              rel="noreferrer"
+              >Read the fidelity notes ↗</a
+            >
+          </p>
+        </details>
+        <footer>
+          <span>R/C — INDEPENDENT ROBOT COMBAT</span
+          ><span>ORIGINAL CODE · ART · SYNTHESIZED AUDIO</span>
+        </footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
