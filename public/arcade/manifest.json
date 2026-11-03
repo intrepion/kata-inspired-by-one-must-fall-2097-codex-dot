@@ -1,6 +1,27 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "gameId": "kata-inspired-by-one-must-fall-2097-codex-dot",
   "playUrl": "https://intrepion.github.io/kata-inspired-by-one-must-fall-2097-codex-dot/",
-  "screenshots": []
+  "screenshots": [
+    {
+      "path": "arcade/screenshots/ci-20261103-01.jpg",
+      "sha256": "3b9f870dd4a6bc4aa9f9bd974f169456b9a3a74a3ff75c8ff48b535e1bd86429",
+      "alt": "Rivet Circuit gameplay",
+      "provenance": {
+        "kind": "ci_gameplay_capture",
+        "sourcePath": "arcade/capture-evidence/ci-20261103-01.png",
+        "sourceSha256": "938cbf41daca04ea963acd7f1b2c441fa5436e6fe74a9bb501e930af71a29e9f",
+        "captureCommit": "776cd0921a1abe585b811ef13a217f6dd76cbdc3",
+        "workflowRunId": "41619364019",
+        "inputHashes": {
+          "assets/index-1YcgZ7yE.js": "fd4f5bc92ed8896287ffebf24683bed97ae7b06cef9c1ceea0b86855b4455691",
+          "assets/index-Bl8ICnu-.css": "3d26fccef8762f2278b7484bcd4fb550f4f021664212aca4f6c8fa34261a5876",
+          "index.html": "95f9f00ff85cab107aeb83d3dff456b64e288d9aa63a0e22881bb4a898f911dd"
+        },
+        "publishedFilesVerifiedAt": "2026-11-03T10:28:47Z",
+        "captureRecordPath": "arcade/capture-evidence/ci-20261103-record.json",
+        "captureRecordSha256": "cc2bf086c4a1587284d31ce44b1e22fe8c16eee638358d8d01ffa19c5f7877bb"
+      }
+    }
+  ]
 }
