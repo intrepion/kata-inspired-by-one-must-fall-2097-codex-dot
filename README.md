@@ -11,7 +11,7 @@ npm test
 npm run build
 npm run preview
 ```
-Production preview: **http://127.0.0.1:5223** (loopback only). `npm run dev -- --port 5223 --strictPort` is also available. The port was checked against existing projects before use; no prior preview was stopped. No public website deployment is configured.
+Production preview: **http://127.0.0.1:5223** (loopback only). `npm run dev -- --port 5223 --strictPort` is also available. The port was checked against existing projects before use; no prior preview was stopped. The browser edition is also available on GitHub Pages.
 
 ## Controls
 Click **Engage Systems**, then use the keyboard. Click the arena to restore focus.
@@ -39,3 +39,7 @@ See [research and verified rules](docs/RESEARCH.md), [accepted spec](docs/SPEC.m
 
 ## License
 MIT. See the complete [LICENSE](LICENSE). Official GitHub global Linux, Windows and macOS ignore templates are retained verbatim in `.gitignore`, followed by project ignores. Source: [github/gitignore/Global](https://github.com/github/gitignore/tree/main/Global).
+
+## Play online
+
+[Play on GitHub Pages](https://intrepion.github.io/kata-inspired-by-one-must-fall-2097-codex-dot/). Return to the [Kata Arcade](https://intrepion.github.io/).
